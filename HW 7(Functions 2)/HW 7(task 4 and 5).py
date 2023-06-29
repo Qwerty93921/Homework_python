@@ -54,4 +54,6 @@ def game_refresher(tries = 0):
 
 num = get_random_int(0, 100)
 game(num, 0, 100)
+# VN: Лучше всего сразу запускать game_refresher, а game уже запускать из неё,
+# и в ней получать и проверять user_choice, но уже после вызова game
 game_refresher()
