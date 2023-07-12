@@ -11,3 +11,4 @@ changed_list[min_index] = max_number
 changed_list[max_index] = min_number
 
 print(changed_list)
+asd
