@@ -10,3 +10,8 @@ for i in range(len(user_list) - 1): # - 1 потому что последнее
         bigger_number.append(user_list[i + 1])
 
 print(bigger_number)
+'''
+VN: Ваша программа не работает:
+Введите числа через запятую без пробелов: 4,3,2,11,0
+[]
+'''

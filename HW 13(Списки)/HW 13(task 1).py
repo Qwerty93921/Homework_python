@@ -4,7 +4,7 @@ user_list = user_input.split(",")
 even_list = []
 
 try:
-    if len(user_list) < 10:
+    if len(user_list) < 10:   # VN: вычисление len не может вызвать ValueError. Обработчик здесь не нужен
         print("Вы ввели меньше 10 чисел")
 
 except ValueError():
@@ -13,7 +13,7 @@ except ValueError():
 else:
     if len(user_list) >= 10:
         for number in range(len(user_list[0:11])):
-            if number % 2 == 0:
+            if number % 2 == 0:   # VN: number здесь является индексом. Числа пользователя вы не проверяете на чётность
                 even_list.append(user_list[number])
                 print("Четное число из списка:", user_list[number])
             else:
