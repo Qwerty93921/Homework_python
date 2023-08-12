@@ -17,12 +17,12 @@ class Phone():
         print(f"Размер памяти телефона {self.memory} ГБ")
     
     def change_color(self, new_color):
-        self.new_color = new_color
+        self.new_color = Phone.color
         print(f"Теперь цвет телефона - {self.new_color}")
 
     def change_color_of_case(self, new_color_of_case):
-        self.color_of_case = new_color_of_case
-        print(f"Теперь цвет телефона - {self.new_color}")
+        self.new_color_of_case = new_color_of_case
+        print(f"Теперь цвет чехла - {self.new_color_of_case}")
 
 my_phone = Phone(32, "black", "white", 1)
 my_phone.add_memory_card(16)
@@ -34,3 +34,5 @@ other_phone = Phone(64, "зеленый", "желтый", 3)
 
 other_phone.add_memory_card(96)
 other_phone.change_color("синий")
+other_phone.change_color_of_case("черный")
+print(other_phone.color)
