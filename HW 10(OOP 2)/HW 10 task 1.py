@@ -97,9 +97,9 @@ class Hotel:
             visitor.order.room.order = None
             visitor.order = None
 
-hotel = Hotel("Luxury Hotel", 5000, 20)
+hotel = Hotel("Hotel 123", 5000, 20)
 
-visitor = Person("John Smith", "123456789012")
+visitor = Person("Ivan Ivanov", "123456789012")
 
 hotel.buy_order(2, datetime.now().date(), (datetime.now() + timedelta(days=5)).date(), visitor)
 
