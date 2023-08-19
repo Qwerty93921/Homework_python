@@ -35,7 +35,7 @@ print(b)
 
 d = {
     "moscow": 800,
-    "boston": 700,
+    "boston": 750,
     "LA": 400,
     "SF": 900,
     "Chicago": 650,
@@ -45,4 +45,4 @@ d = {
 b = list(filter(lambda x: d[x] > 700, d))
 
 print(b)
-# ['moscow', 'SF']
+# ['moscow', 'boston', 'SF']
