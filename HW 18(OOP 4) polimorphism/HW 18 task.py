@@ -34,6 +34,8 @@ class Predator(Animal):
     
     def eat(self, meal):
         if self.meal == Herbivore and self.weight > Herbivore.weight and self.size > Herbivore.size:
+        # VN: неправильная проверка. используйте функцию isinstance для такого
+        # https://docs.python.org/3/library/functions.html#isinstance
             self.weight += len(meal) * 0.2
             self.size += len(meal) * 0.2
         else:
@@ -55,3 +57,5 @@ class Wolf(Predator):
 
     def howl(self, time_of_howl_in_seconds):
         print(f"Волк воет на луну в течении {self.time_of_howl_in_seconds} секунд")
+                    # VN: тут будет падение  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                    # Обязательно повторите, что такое self в классах!!
